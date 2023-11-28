@@ -1,0 +1,1 @@
+Avançando na linguagem TypeScript!
