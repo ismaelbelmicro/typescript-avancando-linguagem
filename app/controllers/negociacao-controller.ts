@@ -54,3 +54,13 @@ export class NegociacaoController {
     this.mensagemView.update("Negociação adicionada com sucesso");
   }
 }
+function inspect(
+  target: () => void,
+  context: ClassMethodDecoratorContext<NegociacaoController, () => void> & {
+    name: "adiciona";
+    private: false;
+    static: false;
+  }
+): void | (() => void) {
+  throw new Error("Function not implemented.");
+}
